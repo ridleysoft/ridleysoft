@@ -1,0 +1,71 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+RidleySoft
+</name>
+</assembly>
+<members>
+<member name="F:RidleySoft.ZebraLabels.ZebraPrint._SafeFileHandle">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:RidleySoft.ZebraLabels.ZebraPrint._fileWriter">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="F:RidleySoft.ZebraLabels.ZebraPrint._outFile">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="T:RidleySoft.ZebraLabels.ZebraPrint.SECURITY_ATTRIBUTES">
+	<summary>
+ Structure for CreateFile.  Used only to fill requirement
+ </summary>
+</member><member name="M:RidleySoft.ZebraLabels.ZebraPrint.CreateFile(System.String,System.Int32,System.Int32,RidleySoft.ZebraLabels.ZebraPrint.SECURITY_ATTRIBUTES@,System.Int32,System.Int32,System.Int32)">
+	<summary>
+	</summary>
+	<param name="lpFileName"></param>
+	<param name="dwDesiredAccess"></param>
+	<param name="dwShareMode"></param>
+	<param name="lpSecurityAttributes"></param>
+	<param name="dwCreationDisposition"></param>
+	<param name="dwFlagsAndAttributes"></param>
+	<param name="hTemplateFile"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:RidleySoft.ZebraLabels.ZebraPrint.StartWrite(System.String)">
+	<summary>
+ This function must be called first.  Printer path must be a COM Port or a UNC path.
+ </summary>
+</member><member name="M:RidleySoft.ZebraLabels.ZebraPrint.Write(System.String)">
+	<summary>
+ This will write a command to the printer.
+ </summary>
+</member><member name="M:RidleySoft.ZebraLabels.ZebraPrint.EndWrite">
+	<summary>
+ This function must be called after writing to the zebra printer.
+ </summary>
+</member><member name="T:RidleySoft.ZebraLabels.ZebraPrint">
+	<summary>
+ This class can print zebra labels to either a network share, LPT, or COM port.
+
+ Programmer: Rick Chronister
+ </summary>
+	<remarks>Only tested for network share, but in theory works for LPT and COM.</remarks>
+</member><member name="P:RidleySoft.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:RidleySoft.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:RidleySoft.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

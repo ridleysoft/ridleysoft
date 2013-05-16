@@ -1,0 +1,604 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A6B4D6F4-364E-4183-A6A5-98854A36014F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>RidleySoft.My.MyApplication</StartupObject>
+    <RootNamespace>RidleySoft</RootNamespace>
+    <AssemblyName>RidleySoft</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RidleySoft.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RidleySoft.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Ridley-Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DYMO.Label.Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5426002a38745af9, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 6.6.5\Assemblies\v4.0\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Phidget21.NET, Version=2.1.8.133, Culture=neutral, PublicKeyToken=c2b1f2a3594bce52, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Phidgets\Phidget21.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AddRight.Designer.vb">
+      <DependentUpon>AddRight.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddRight.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminFormUser.Designer.vb">
+      <DependentUpon>AdminFormUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminFormUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Filter\FilterGroup.Designer.vb">
+      <DependentUpon>FilterGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Filter\FilterGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Filter\FilterMenu.Designer.vb">
+      <DependentUpon>FilterMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Filter\FilterMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Filter\FilterModule.Designer.vb">
+      <DependentUpon>FilterModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Filter\FilterModule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Filter\FilterRight.Designer.vb">
+      <DependentUpon>FilterRight.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Filter\FilterRight.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Filter\FilterSubmenu.Designer.vb">
+      <DependentUpon>FilterSubmenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Filter\FilterSubmenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormAddHelpFiles.Designer.vb">
+      <DependentUpon>FormAddHelpFiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormAddHelpFiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormGroup.Designer.vb">
+      <DependentUpon>FormGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormHelpFiles.Designer.vb">
+      <DependentUpon>FormHelpFiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormHelpFiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormMenu.Designer.vb">
+      <DependentUpon>FormMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormModule.Designer.vb">
+      <DependentUpon>FormModule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormModule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormRights.Designer.vb">
+      <DependentUpon>FormRights.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormRights.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormUserRights.Designer.vb">
+      <DependentUpon>FormUserRights.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormUserRights.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormSettings.Designer.vb">
+      <DependentUpon>FormSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormSubMenu.Designer.vb">
+      <DependentUpon>FormSubMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormSubMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\GroupToevoegen.Designer.vb">
+      <DependentUpon>GroupToevoegen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GroupToevoegen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\MenuToevoegen.Designer.vb">
+      <DependentUpon>MenuToevoegen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MenuToevoegen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ModuleToevoegen.Designer.vb">
+      <DependentUpon>ModuleToevoegen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ModuleToevoegen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormUsersModules.Designer.vb">
+      <DependentUpon>FormUsersModules.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormUsersModules.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\SettingToevoegen.Designer.vb">
+      <DependentUpon>SettingToevoegen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SettingToevoegen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\SubMenuToevoegen.Designer.vb">
+      <DependentUpon>SubMenuToevoegen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SubMenuToevoegen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Filter\FilterUser.Designer.vb">
+      <DependentUpon>FilterUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Filter\FilterUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="B2B\Filter\FilterB2B.Designer.vb">
+      <DependentUpon>FilterB2B.vb</DependentUpon>
+    </Compile>
+    <Compile Include="B2B\Filter\FilterB2B.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B2B\FormAddFromExcel.Designer.vb">
+      <DependentUpon>FormAddFromExcel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="B2B\FormAddFromExcel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B2B\FormAddItem.Designer.vb">
+      <DependentUpon>FormAddItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="B2B\FormAddItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B2B\FormDeleteItem.Designer.vb">
+      <DependentUpon>FormDeleteItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="B2B\FormDeleteItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B2B\FormResizeImages.Designer.vb">
+      <DependentUpon>FormResizeImages.vb</DependentUpon>
+    </Compile>
+    <Compile Include="B2B\FormResizeImages.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="B2B\FormUpdateItem.Designer.vb">
+      <DependentUpon>FormUpdateItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="B2B\FormUpdateItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataAccessClasses\B2B\DAHeadSubMenuToTypeItem.vb" />
+    <Compile Include="DataAccessClasses\B2B\GeluktNietGelukt.vb" />
+    <Compile Include="DataAccessClasses\Basis\DAAllesOphalen.vb" />
+    <Compile Include="DataAccessClasses\Basis\DAHelpfile.vb" />
+    <Compile Include="DataAccessClasses\DABaseClass.vb" />
+    <Compile Include="DataAccessClasses\Basis\DADatabase.vb" />
+    <Compile Include="DataAccessClasses\Basis\DAGroup.vb" />
+    <Compile Include="DataAccessClasses\Basis\DAGroupModule.vb" />
+    <Compile Include="DataAccessClasses\B2B\DAHeadSubMenu.vb" />
+    <Compile Include="DataAccessClasses\B2B\DAItemChars.vb" />
+    <Compile Include="DataAccessClasses\B2B\DAItemMenu.vb" />
+    <Compile Include="DataAccessClasses\B2B\DAItems.vb" />
+    <Compile Include="DataAccessClasses\Basis\DAMenu.vb" />
+    <Compile Include="DataAccessClasses\B2B\DAMenuItemImage.vb" />
+    <Compile Include="DataAccessClasses\Basis\DAMenuMod.vb" />
+    <Compile Include="DataAccessClasses\Basis\DAModule.vb" />
+    <Compile Include="DataAccessClasses\Labels\DALabel.vb" />
+    <Compile Include="DataAccessClasses\Labels\DALabelData.vb" />
+    <Compile Include="DataAccessClasses\Labels\DALabelPath.vb" />
+    <Compile Include="DataAccessClasses\Montage\DAMontage.vb" />
+    <Compile Include="DataAccessClasses\Montage\DAPrb.vb" />
+    <Compile Include="DataAccessClasses\Montage\DARFID.vb" />
+    <Compile Include="DataAccessClasses\Basis\DARights.vb" />
+    <Compile Include="DataAccessClasses\Basis\DASettings.vb" />
+    <Compile Include="DataAccessClasses\Basis\DASubmenu.vb" />
+    <Compile Include="DataAccessClasses\Basis\DASubmenuMod.vb" />
+    <Compile Include="DataAccessClasses\Basis\DATranslation.vb" />
+    <Compile Include="DataAccessClasses\B2B\DATypeMenu.vb" />
+    <Compile Include="DataAccessClasses\Basis\DAUser.vb" />
+    <Compile Include="DataAccessClasses\Basis\DAUserModule.vb" />
+    <Compile Include="DataAccessClasses\Basis\DAUserRights.vb" />
+    <Compile Include="DataAccessClasses\Basis\DAUserSettings.vb" />
+    <Compile Include="DBConnection.vb" />
+    <Compile Include="HelpFiles\FormHelp.Designer.vb">
+      <DependentUpon>FormHelp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HelpFiles\FormHelp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labels\FormLabel.Designer.vb">
+      <DependentUpon>FormLabel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Labels\FormLabel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Labels\FormLabelEmployee.Designer.vb">
+      <DependentUpon>FormLabelEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Labels\FormLabelEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Montage\FormStopProcedure.Designer.vb">
+      <DependentUpon>FormStopProcedure.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Montage\FormStopProcedure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Montage\FormStartProcedure.Designer.vb">
+      <DependentUpon>FormStartProcedure.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Montage\FormStartProcedure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Montage\FormStartProcedure2.Designer.vb">
+      <DependentUpon>FormStartProcedure2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Montage\FormStartProcedure2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Montage\FormStartProcedure3.Designer.vb">
+      <DependentUpon>FormStartProcedure3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Montage\FormStartProcedure3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Montage\FormStopProcedure2.Designer.vb">
+      <DependentUpon>FormStopProcedure2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Montage\FormStopProcedure2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Print labels.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Print.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrinterManager.vb" />
+    <Compile Include="PrintRaw.vb" />
+    <Compile Include="SearchForm.Designer.vb">
+      <DependentUpon>SearchForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\UserToevoegen.Designer.vb">
+      <DependentUpon>UserToevoegen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserToevoegen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Translate.vb" />
+    <Compile Include="UserControlTextbox.Designer.vb">
+      <DependentUpon>UserControlTextbox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlTextbox.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WindowsLogin.vb" />
+    <Compile Include="ZebraLabels.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin\AddRight.resx">
+      <DependentUpon>AddRight.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminFormUser.resx">
+      <DependentUpon>AdminFormUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Filter\FilterGroup.resx">
+      <DependentUpon>FilterGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Filter\FilterMenu.resx">
+      <DependentUpon>FilterMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Filter\FilterModule.resx">
+      <DependentUpon>FilterModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Filter\FilterRight.resx">
+      <DependentUpon>FilterRight.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Filter\FilterSubmenu.resx">
+      <DependentUpon>FilterSubmenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormAddHelpFiles.resx">
+      <DependentUpon>FormAddHelpFiles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormGroup.resx">
+      <DependentUpon>FormGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormHelpFiles.resx">
+      <DependentUpon>FormHelpFiles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormMenu.resx">
+      <DependentUpon>FormMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormModule.resx">
+      <DependentUpon>FormModule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormRights.resx">
+      <DependentUpon>FormRights.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormUserRights.resx">
+      <DependentUpon>FormUserRights.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormSettings.resx">
+      <DependentUpon>FormSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormSubMenu.resx">
+      <DependentUpon>FormSubMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormUsersModules.resx">
+      <DependentUpon>FormUsersModules.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\GroupToevoegen.resx">
+      <DependentUpon>GroupToevoegen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\MenuToevoegen.resx">
+      <DependentUpon>MenuToevoegen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ModuleToevoegen.resx">
+      <DependentUpon>ModuleToevoegen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SettingToevoegen.resx">
+      <DependentUpon>SettingToevoegen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SubMenuToevoegen.resx">
+      <DependentUpon>SubMenuToevoegen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Filter\FilterUser.resx">
+      <DependentUpon>FilterUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B2B\Filter\FilterB2B.resx">
+      <DependentUpon>FilterB2B.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B2B\FormAddFromExcel.resx">
+      <DependentUpon>FormAddFromExcel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B2B\FormAddItem.resx">
+      <DependentUpon>FormAddItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B2B\FormDeleteItem.resx">
+      <DependentUpon>FormDeleteItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B2B\FormResizeImages.resx">
+      <DependentUpon>FormResizeImages.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="B2B\FormUpdateItem.resx">
+      <DependentUpon>FormUpdateItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpFiles\FormHelp.resx">
+      <DependentUpon>FormHelp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labels\FormLabel.resx">
+      <DependentUpon>FormLabel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Labels\FormLabelEmployee.resx">
+      <DependentUpon>FormLabelEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Montage\FormStopProcedure.resx">
+      <DependentUpon>FormStopProcedure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Montage\FormStartProcedure.resx">
+      <DependentUpon>FormStartProcedure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Montage\FormStartProcedure2.resx">
+      <DependentUpon>FormStartProcedure2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Montage\FormStartProcedure3.resx">
+      <DependentUpon>FormStartProcedure3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Montage\FormStopProcedure2.resx">
+      <DependentUpon>FormStopProcedure2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm.resx">
+      <DependentUpon>SearchForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\UserToevoegen.resx">
+      <DependentUpon>UserToevoegen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlTextbox.resx">
+      <DependentUpon>UserControlTextbox.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ridley-Logo.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

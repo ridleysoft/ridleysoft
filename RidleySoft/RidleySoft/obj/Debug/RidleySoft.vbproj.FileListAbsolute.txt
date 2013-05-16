@@ -1,0 +1,64 @@
+C:\Users\stefc\AppData\Local\Temporary Projects\RidleySoft\bin\Debug\RidleySoft.exe.config
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\bin\Debug\RidleySoft.exe.config
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\bin\Debug\RidleySoft.exe
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\bin\Debug\RidleySoft.pdb
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\bin\Debug\RidleySoft.xml
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\bin\Debug\Phidget21.NET.dll
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\bin\Debug\Phidget21.NET.xml
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.AddRight.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.AdminFormUser.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FilterGroup.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FilterMenu.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FilterModule.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FilterRight.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FilterSubmenu.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FormGroup.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FormMenu.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FormModule.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FormRights.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FormUserRights.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FormSettings.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FormSubMenu.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FormUsersModules.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.GroupToevoegen.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.MenuToevoegen.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.ModuleToevoegen.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.SettingToevoegen.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.SubMenuToevoegen.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FilterUser.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FilterB2B.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FormAddFromExcel.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FormAddItem.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FormDeleteItem.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FormUpdateItem.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.MainForm.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FormStopProcedure.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FormStartProcedure.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FormStartProcedure2.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FormStartProcedure3.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FormStopProcedure2.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.Resources.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.SearchForm.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.SplashScreen1.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.UserToevoegen.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.UserControlTextbox.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.vbproj.GenerateResource.Cache
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.exe
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.xml
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.pdb
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FormResizeImages.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\bin\Debug\MySql.Data.dll
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FormLabel.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\bin\Debug\DYMO.Label.Framework.dll
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\bin\Debug\DYMO.DLS.Runtime.dll
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\bin\Debug\DYMO.Common.dll
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\bin\Debug\DYMO.Label.Framework.xml
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.vbprojResolveAssemblyReference.cache
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FormLabelEmployee.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FormHelp.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FormAddHelpFiles.resources
+\\poseidon\homedirs\stefc\Visual Studio 2012\Projects\RidleySoft\RidleySoft\obj\Debug\RidleySoft.FormHelpFiles.resources
+C:\RidleySoft\ridleysoft\RidleySoft\RidleySoft\bin\Debug\RidleySoft.exe.config
+C:\RidleySoft\ridleysoft\RidleySoft\RidleySoft\obj\Debug\RidleySoft.exe
+C:\RidleySoft\ridleysoft\RidleySoft\RidleySoft\obj\Debug\RidleySoft.xml
+C:\RidleySoft\ridleysoft\RidleySoft\RidleySoft\obj\Debug\RidleySoft.pdb
