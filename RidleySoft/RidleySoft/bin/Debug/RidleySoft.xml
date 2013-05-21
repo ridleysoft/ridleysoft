@@ -6,7 +6,20 @@ RidleySoft
 </name>
 </assembly>
 <members>
-<member name="F:RidleySoft.ZebraLabels.ZebraPrint._SafeFileHandle">
+<member name="P:RidleySoft.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:RidleySoft.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:RidleySoft.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:RidleySoft.ZebraLabels.ZebraPrint._SafeFileHandle">
 	<summary>
 	</summary>
 	<remarks></remarks>
@@ -53,19 +66,6 @@ RidleySoft
  Programmer: Rick Chronister
  </summary>
 	<remarks>Only tested for network share, but in theory works for LPT and COM.</remarks>
-</member><member name="P:RidleySoft.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:RidleySoft.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="T:RidleySoft.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
 </member>
 </members>
 </doc>

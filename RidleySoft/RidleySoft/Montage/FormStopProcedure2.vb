@@ -95,7 +95,7 @@
 
         Dim diff As Long
         diff = (((DateDiff(DateInterval.Hour, MainForm.starttijd, MainForm.stoptijd) * 60) + (DateDiff(DateInterval.Minute, MainForm.starttijd, MainForm.stoptijd)) + (DateDiff(DateInterval.Second, MainForm.starttijd, MainForm.stoptijd) / 60)) - days - weekend - case3 - case4)
-        LabelLabor.Text = diff.ToString()
+        LabelLabor.Text = diff.ToString() & " minuten"
 
         Dim kpi As Integer = (diff / intProvidedlabortime * 100)
         LabelKPI.Text = kpi.ToString()

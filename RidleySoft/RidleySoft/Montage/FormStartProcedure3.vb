@@ -12,7 +12,7 @@
         Dim prb As DAPrb = daPRB.GetPRBInfo(MainForm.strPRB)
 
         LabelStartTijd.Text = MainForm.starttijd.ToString()
-        LabelProvidedTijd.Text = prb.Provided
+        LabelProvidedTijd.Text = prb.Provided & " minuten"
         LabelModel.Text = prb.Model
         LabelDesign.Text = prb.Design
         LabelMontageNiveau.Text = prb.MontageNiveau
@@ -29,8 +29,6 @@
             'MessageBox.Show(montage.Mechanic & "->" & montage.Prb & "->" & montage.Starttime).ToString()
             daMontage.InsertMontage(montage)
         End If
-
-
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
