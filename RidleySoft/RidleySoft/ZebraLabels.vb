@@ -107,7 +107,7 @@ Namespace ZebraLabels
 #End Region
 
 
-        'Dit is een test
+        'Dit is een test2
 
     End Class
 End Namespace
